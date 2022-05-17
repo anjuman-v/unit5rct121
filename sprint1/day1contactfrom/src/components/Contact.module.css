@@ -1,0 +1,12 @@
+.cardDiv{
+    border: 2px solid teal;
+    height: 500px !important;
+    width: 40%;
+}
+.profileDiv{
+    border: 1px solid red;
+    height: 15%;
+    width: 98%;
+    margin: 1%;
+    
+}
