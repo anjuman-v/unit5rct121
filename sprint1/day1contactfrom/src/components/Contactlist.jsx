@@ -6,7 +6,9 @@ import style  from './Contact.module.css';
   return (
     <Card className={style.cardDiv}>
      
-      <div className={style.profileDiv}></div>
+      <div className={style.profileDiv}>
+        <div></div>
+      </div>
      
       <div className={style.profileDiv}></div>
 

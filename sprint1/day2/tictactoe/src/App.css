@@ -7,9 +7,19 @@ body {
   background-color: white;
 }
 
+.mobilediv{
+  margin-top: 3%;
+}
 .pages {
-  color: white;
+  color: #316685;
   text-align: center;
   font-size: 3.5rem;
   margin-top: 10%;
+}
+li{
+  font-size: 22px;
+}
+div{
+  margin-top: 1%;
+  margin-left: 1%;
 }
