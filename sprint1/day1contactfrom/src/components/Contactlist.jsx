@@ -1,27 +1,38 @@
+import { useState } from 'react';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import style  from './Contact.module.css';
 
- export const Contactlist = () => {
+ export const Contactlist = (props) => {
+
+  const { name, email, id, phone } = props
+  const [isActive, setIsActive] = useState(false);
+
   return (
-    <Card className={style.cardDiv}>
+    <div className={style.cardDiv}>
      
-      <div className={style.profileDiv}>
-        <div></div>
-      </div>
-     
-      <div className={style.profileDiv}></div>
+      <div className={style.container}>
+        <div>{name}</div>
+        <div>{email}</div>
 
-      <div className={style.profileDiv}></div>
+        <div className={style.clickContainer}>
+         {isActive ? (
+           <div onClick={() => setIsActive(isActive)}> 
+           {" "}
+           click to show more {" "}
+           </div>
 
-      <div className={style.profileDiv}></div>
+         ):(
+          <div onClick={() => setIsActive(isActive)}>
+            {phone}
+          </div>
 
-      <div className={style.profileDiv}></div>
-
-      <div className={style.profileDiv}></div>
-
-     
-    </Card>
+         )}
+          </div>
+          
+       
+    </div> 
+    </div>
   );
 }
 

@@ -1,10 +1,10 @@
 import "./App.css";
-import { Inventory } from "./components/Inventory";
+import { GithubRepositories } from './components/GithubRepositories'
 
 function App() {
   return (
     <div className="App">
-      <Inventory />
+      <GithubRepositories />
     </div>
   );
 }
