@@ -26,7 +26,7 @@ export const GithubRepositories = () =>{
 
         axios({
             method:"get",
-            url:"http://api.github.com/search/users",
+            url:"https://api.github.com/users/octocat/followers",
             params:{
             per_page:5,
             q:q,
