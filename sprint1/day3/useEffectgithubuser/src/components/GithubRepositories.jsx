@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { GithubCard } from './GithubCard'
-import { PaginationComnent } from './PaginationComnent'
+
 import './gituser.css';
  
 
@@ -26,9 +26,9 @@ export const GithubRepositories = () =>{
 
         axios({
             method:"get",
-            url:"https://api.github.com/users/octocat/followers",
+            url:"https://reqres.in/api/users/",
             params:{
-            per_page:5,
+            _page:5,
             q:q,
         },
         })
@@ -44,7 +44,7 @@ export const GithubRepositories = () =>{
 
     }
 
-    //console.log(data);
+    console.log(data);
     
 
 
@@ -75,6 +75,7 @@ export const GithubRepositories = () =>{
 
                     <button className="btn" disabled={page === 1}  onClick={()=> setPage(page-1)}> prev</button>
                     <button className="btn" onClick={() => setPage(page+1)}>next</button>
+                    
                     <PaginationComnent currentPage={page} lastPage={5} onPageChange = {setPage} />
                 </div>
 
@@ -83,18 +84,18 @@ export const GithubRepositories = () =>{
 
 }
 
-// const PaginationComnent = ({
-//     currentPage,
-//     lastPage,
-//     onPageChange,
-// })  => {
-//     const arr = new Array(lastPage).fill(0);
+const PaginationComnent = ({
+    currentPage,
+    lastPage,
+    onPageChange,
+})  => {
+    const arr = new Array(lastPage).fill(0);
     
-//     return(
-//         <div>
-//             {
-//                 arr.map((item, page) => <button onClick={() => onPageChange(page+1)} disabled={(page+1) === currentPage}> {page+1} </button>)
-//             }
-//         </div>
-//     )
-// }
+    return(
+        <div>
+            {
+                arr.map((item, page) => <button onClick={() => onPageChange(page+1)} disabled={(page+1) === currentPage}> {page+1} </button>)
+            }
+        </div>
+    )
+}

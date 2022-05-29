@@ -1,0 +1,17 @@
+.buttonBase {
+  padding: 1rem;
+  font-size: 18px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 3px solid black;
+}
+.buttonlight {
+  background-color: rgb(255, 165, 0);
+  color: black;
+  border: 3px solid red;
+}
+.buttonDark {
+  background-color: red;
+ color : blue;
+ border: 3px solid yellow;
+}

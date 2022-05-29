@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbfrxOQhfHcjdTCSYQJcKWj1rlhGJOnjzXChp0a3J5GlxWMKG1ddZvEdTnFCgoRuO370s&usqp=CAU",
+      "name": "SmartPhone",
+      "price": 12000
+    },
+    {
+      "id": 1,
+      "avatar":"https://m.media-amazon.com/images/I/6174MfDXPVL._UY741_.jpg",
+      "name": "Watch",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "avatar":"https://m.media-amazon.com/images/I/6174MfDXPVL._UY741_.jpg",
+      "name": "t_shirt",
+      "price": 1000
+    },
+    {
+      "id": 3,
+      "avatar":"https://m.media-amazon.com/images/I/6174MfDXPVL._UY741_.jpg",
+      "name": "Pants",
+      "price": 1500
+    }
+  ]
+}
